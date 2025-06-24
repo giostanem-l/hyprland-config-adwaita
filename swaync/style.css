@@ -1,0 +1,57 @@
+trough {
+    border-radius: 10px;
+    background-color: #d0d0d0; 
+}
+
+trough highlight {
+    background-color: #007acc; 
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+trough slider {
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #007acc;
+    transition: background-color 0.2s ease;
+}
+
+trough slider:hover {
+    background-color: #e0e0e0;
+}
+
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    background-color: #3a3a3a;  
+    border-radius: 8px;
+    padding: 8px;
+    min-width: 24px;
+    min-height: 24px;
+    color: #d7dce1;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background-color: #505050;  
+    color: #ffffff;
+}
+
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle {
+    background-color: #3a3a3a;
+    color: #d7dce1;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:hover {
+    background-color: #505050;
+    color: #ffffff;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+    background-color: #007acc;
+    color: white;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked:hover {
+    background-color: #005ea2;
+}

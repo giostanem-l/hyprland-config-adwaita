@@ -1,3 +1,3 @@
 Adwaita dark theme like hyprland configuration.
 
-![[Pasted image 20250624165123.png]]
+![Image](https://github.com/user-attachments/assets/cea858d0-374c-4186-8752-421b01da2fb5)

@@ -1,0 +1,128 @@
+* {
+    font: "Adwaita-sans 10"; 
+    g-spacing: 10px;
+    g-margin: 10px;
+    b-color: rgba(98, 98, 98, 0.15); 
+    fg-color: #ffffff; 
+    fgp-color: rgba(255, 255, 255, 0.7); 
+    b-radius: 0px; 
+    g-padding: 8px;
+    hl-color: #626262; 
+    hlt-color: #242424; 
+    alt-color: rgba(98, 98, 98, 0.1); 
+    wbg-color: rgba(36, 36, 36, 0.5); 
+    w-border: 0px solid; 
+    w-border-color: rgba(98, 98, 98, 0.15);
+    w-padding: 12px;
+}
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: "";
+    width: 300px; 
+}
+
+listview {
+    columns: 1;
+    lines: -1; 
+    fixed-height: false; 
+    fixed-columns: true;
+    cycle: false;
+    scrollbar: false;
+    border: 0px solid;
+    padding: 5px; 
+}
+
+window {
+    transparency: "real";
+    width: 300px; 
+    height: 92%; 
+    border-radius: 0px; 
+    background-color: rgba(36, 36, 36, 0.5); 
+    border: 0px solid; 
+    padding: 20px 12px 20px 12px; 
+	 location: east;
+    anchor: east;
+}
+
+prompt {
+    text-color: #ffffff; 
+    font: "CodeNewRoman Nerd Font Propo 12"; 
+}
+
+inputbar {
+    children: ["prompt", "entry"];
+    spacing: 10px;
+	location: west; 
+	anchor:  west;   
+	padding: 0px 0px 5px 0px; 
+}
+
+entry {
+    placeholder: "Cerca App";
+    text-color: #ffffff; 
+    placeholder-color: rgba(255, 255, 255, 0.7); 
+    background-color: rgba(36, 36, 36, 0.2); 
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+mainbox {
+    spacing: 10px;
+    margin: 0;
+    padding: 0; 
+    children: ["inputbar", "listview", "message"];
+}
+
+element {
+    spacing: 10px;
+    margin: 2px 0px; 
+    padding: 8px;
+    border: 0px solid;
+    border-radius: 3px; 
+    border-color: rgba(98, 98, 98, 0.15); 
+    background-color: transparent;
+    text-color: #ffffff; 
+    vertical-align: 0.5; 
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: #ffffff; 
+}
+
+element alternate.normal {
+    background-color: rgba(98, 98, 98, 0.1); 
+    text-color: #ffffff; 
+}
+
+element selected.active,
+element selected.normal {
+    background-color: #626262; 
+    text-color: #ffffff; 
+    border-radius: 3px;
+}
+
+element-icon {
+    size: 1em;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+
+message {
+    background-color: #E04040; 
+    border: 0px solid;
+    text-color: #ffffff; 
+    font: "CodeNewRoman Nerd Font Propo 10";
+}
+
+
+scrollbar {
+    handle-width: 5px;
+    handle-color: #626262; 
+    border-radius: 0px;
+    background-color: transparent;
+}

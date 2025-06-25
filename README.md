@@ -7,13 +7,13 @@ Adwaita dark theme like hyprland configuration.
 
 ### Configs
 * hyprland
-** hypridle
-** hyprpaper
-** hyprlock
-** hyprland conf
+  * hypridle
+  * hyprpaper
+  * hyprlock
+  * hyprland conf
 * neovim
-** my neovim configuration
-** init.vim
+  * my neovim configuration
+  * init.vim
 * rofi
 * swaync
 * some wallpapers

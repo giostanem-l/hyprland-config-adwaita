@@ -17,4 +17,23 @@ Adwaita dark theme like hyprland configuration.
 * rofi
 * swaync
 * some wallpapers
-* waybar   
+* waybar
+* kitty   
+
+### Packages
+* hyprland
+* kitty
+* hyprpaper
+* hypridle
+* hyprlock
+* nvim
+* rofi
+* rofi power menu
+* waybar
+* swaync
+* wob
+* nm-applet
+* overskride
+* pavucontrol
+
+

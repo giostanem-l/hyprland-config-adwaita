@@ -126,20 +126,20 @@
     "bat": "BAT2"
   },
   "network": {
+    //"interface":"wlo1",		  
     "tooltip-format": "{ifname} - {signalStrength}%",
-    "format": "",
-    "format-wifi": "",
+    "format": "{ifname}",
+    "format-wifi": "{icon}",
     "format-disconnected": "",
-    //"interface": "enp6s0", // (Optional) To force the use of this interface
     //"format-wifi": "{essid} ({signalStrength}%) ",
-    //"format-ethernet": "{ipaddr}/{cidr} ",
+    "format-ethernet": "{ipaddr}/{cidr} ",
     //"tooltip-format": "{ifname} via {gwaddr} ",
     //"format-linked": "{ifname} (No IP) ",
-    //"format-connected": "⚠",
-    //"format-disconnected": "⚠",
+    "format-disconnected": "󰤭",
     //"format-alt": "{ifname}: {ipaddr}/{cidr}"
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "on-click": "nm-applet",
-    "on-click-right" : "killall nm-applet"
+    "on-click-right" : "./.scripts/rofi-wifi-menu.sh"
   },
 
   "bluetooth": {
@@ -197,7 +197,7 @@
     "tooltip-format": "{volume}%",
     
     "format": "{icon}",
-    "format-bluetooth": "{icon} ",
+    "format-bluetooth": "{icon}",
     "format-bluetooth-muted": " {icon} ",
     "format-muted": " ",
     //  "format-source": "{volume}% ",

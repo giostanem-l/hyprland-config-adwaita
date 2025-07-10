@@ -1,4 +1,3 @@
-"Bek Brace @ 30.11.2022
 :set relativenumber
 :set number
 :set autoindent
@@ -6,7 +5,6 @@
 :set shiftwidth=4
 :set smarttab
 :set softtabstop=4
-:set mouse=a
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
@@ -32,12 +30,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
-Plug 'https://github.com/alexxGmZ/Md2Pdf'
 
-Plug 'https://github.com/MeanderingProgrammer/render-markdown.nvim'
-
-Plug 'ThePrimeagen/vim-be-good'
-
+Plug 'mhinz/vim-startify'
 
 " Auto-completion  For Javascript
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for auto complete, prettier and tslinting
@@ -50,6 +44,7 @@ Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 Plug 'yuezk/vim-js'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'maxmellon/vim-jsx-pretty'
+
 
 
 set encoding=UTF-8
@@ -66,7 +61,7 @@ nmap <F8> :TagbarToggle<CR>
 
 :set completeopt-=preview " For No Previews
 "   might change the theme later"
-:colorscheme gruvbox	
+:colorscheme gruvbox
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
@@ -95,5 +90,21 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
+
+let g:startify_custom_header = [
+  \ '                                                                      ',
+  \ ' ██████   █████                   █████   █████  ███                  ',
+  \ ' ░░██████ ░░███                   ░░███   ░░███  ░░░                  ',
+  \ ' ░███░███ ░███   ██████   ██████  ░███    ░███  ████  █████████████   ',
+  \ ' ░███░░███░███  ███░░███ ███░░███ ░███    ░███ ░░███ ░░███░░███░░███  ',
+  \ ' ░███ ░░██████ ░███████ ░███ ░███ ░░███   ███   ░███  ░███ ░███ ░███  ',
+  \ ' ░███  ░░█████ ░███░░░  ░███ ░███  ░░░█████░    ░███  ░███ ░███ ░███  ',
+  \ ' █████  ░░█████░░██████ ░░██████     ░░███      █████ █████░███ █████ ',
+  \ ' ░░░░░    ░░░░░  ░░░░░░   ░░░░░░       ░░░      ░░░░░ ░░░░░ ░░░ ░░░░░ ',
+  \ ]
+
+
+
+
+inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"

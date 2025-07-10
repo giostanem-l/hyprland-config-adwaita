@@ -127,7 +127,7 @@
   },
   "network": {
     //"interface":"wlo1",		  
-    "tooltip-format": "{ifname} - {signalStrength}%",
+    "tooltip-format": "{essid} - {signalStrength}%",
     "format": "{ifname}",
     "format-wifi": "{icon}",
     "format-disconnected": "",

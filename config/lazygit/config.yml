@@ -1,0 +1,38 @@
+gui:
+  theme:
+    lightTheme: false # Imposta su true per un tema chiaro, false per scuro (Gruvbox è tipicamente scuro)
+    # Colori Gruvbox Dark
+    activeBorderColor:
+      - '#b8bb26' # Verde Gruvbox
+      - 'bold'
+    inactiveBorderColor:
+      - '#504945' # Grigio Gruvbox
+    selectedLineBgColor:
+      - '#3c3836' # Sfondo scuro per la riga selezionata
+    optionsTextColor:
+      - '#fabd2f' # Giallo Gruvbox
+    selectedRangeBgColor:
+      - '#458588' # Blu Gruvbox per intervalli selezionati
+    cherryPickedCommitBgColor:
+      - '#83a598' # Grigio-verde per commit cherry-picked
+    unstagedChangesColor:
+      - '#fb4934' # Rosso per modifiche non in stage
+    stagedChangesColor:
+      - '#b8bb26' # Verde per modifiche in stage
+    rewordingCommitColor:
+      - '#d3869b' # Viola per commit in fase di reword
+    mergingBold: true
+    defaultFgColor:
+      - '#ebdbb2' # Colore del testo predefinito (Gruvbox foreground)
+    defaultSet: true
+    # Puoi aggiungere altre personalizzazioni dei colori qui
+    # ad esempio:
+    # defaultTextColor:
+    #   - '#ebdbb2'
+    # commandLog:
+    #   fg: '#8ec07c' # Verde chiaro
+    # commitHash:
+    #   fg: '#83a598' # Grigio-verde
+    # menu:
+    #   fg: '#ebdbb2'
+    #   bg: '#282828'

@@ -19,6 +19,8 @@ Adwaita dark theme like with a touch of gruvbox hyprland configuration.
 * some wallpapers
 * waybar
 * kitty   
+* ranger
+* lazygit
 
 ### Packages
 * hyprland
@@ -35,5 +37,7 @@ Adwaita dark theme like with a touch of gruvbox hyprland configuration.
 * nm-applet
 * overskride
 * pavucontrol
+* ranger
+* lazygit
 
 

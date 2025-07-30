@@ -32,6 +32,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 
 
 Plug 'mhinz/vim-startify'
+Plug 'https://github.com/MeanderingProgrammer/render-markdown.nvim'
 
 " Auto-completion  For Javascript
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for auto complete, prettier and tslinting

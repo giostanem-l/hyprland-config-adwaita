@@ -1,0 +1,2 @@
+   set default-bg rgba(30,30,30,0.6)  # Fully transparent black
+   set recolor-lightcolor rgba(30,30,30,0.6) #Also transparent

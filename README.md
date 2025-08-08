@@ -21,6 +21,12 @@ Adwaita dark theme like with a touch of gruvbox hyprland configuration.
 * kitty   
 * ranger
 * lazygit
+* btop
+* zathura
+* swayosd
+* kew
+* ranger
+
 
 ### Packages
 * hyprland
@@ -31,13 +37,15 @@ Adwaita dark theme like with a touch of gruvbox hyprland configuration.
 * nvim
 * rofi
 * rofi power menu
+* rofi wifi menu
 * waybar
 * swaync
-* wob
+* swayosd
 * nm-applet
 * overskride
 * pavucontrol
 * ranger
 * lazygit
+* zathura
 
 

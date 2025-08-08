@@ -10,6 +10,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
+
+
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType pgsql.vim
@@ -33,6 +35,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 
 Plug 'mhinz/vim-startify'
 Plug 'https://github.com/MeanderingProgrammer/render-markdown.nvim'
+Plug 'https://github.com/romgrk/barbar.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 
 " Auto-completion  For Javascript
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for auto complete, prettier and tslinting

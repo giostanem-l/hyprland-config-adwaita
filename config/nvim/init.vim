@@ -5,6 +5,7 @@
 :set shiftwidth=4
 :set smarttab
 :set softtabstop=4
+set clipboard=unnamedplus
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 

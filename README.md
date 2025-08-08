@@ -2,7 +2,7 @@
 
 Adwaita dark theme like with a touch of gruvbox hyprland configuration.
 
-![Image](https://github.com/user-attachments/assets/cea858d0-374c-4186-8752-421b01da2fb5)
+<img width="2560" height="1440" alt="Image" src="https://github.com/user-attachments/assets/b4ec9b6f-3c26-435c-9ec6-8db5e6b242de" />
 
 
 ### Configs

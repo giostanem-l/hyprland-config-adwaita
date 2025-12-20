@@ -92,7 +92,7 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""]
   },
   "backlight": {
     // "device": "acpi_video1",
@@ -152,7 +152,7 @@
   },
 
   "custom/wlogout": {
-    "format": "⏻",
+    "format": "",
     "tooltip": true,
     "tooltip-format": "Xmenu",
     "on-click": "rofi -show power-menu -modi power-menu:rofi-power-menu -config ~/.config/rofi/config3.rasi || killall rofi"
@@ -171,10 +171,10 @@
     "tooltip-format": "notifiche",
     "format": "{icon}",
     "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
-      "none": "",
-      "dnd-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-none": "",
+      "notification": "󱅫",
+      "none": "󰂚",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
       "inhibited-notification": "<span foreground='red'><sup></sup></span>",
       "inhibited-none": "",
       "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
@@ -196,8 +196,8 @@
     
     "format": "{icon}",
     "format-bluetooth": "",
-    "format-bluetooth-muted": " {icon} ",
-    "format-muted": " ",
+    "format-bluetooth-muted": " {icon} ",
+    "format-muted": " ",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
@@ -216,8 +216,8 @@
     "tooltip": false,
     "interval": 5,
     "on-update": "",
-    "exec": "sleep 0.05; $HOME/.scripts/gammastep.sh",
-    "on-click": "bash $HOME/.scripts/gammastep.sh toggle"
+    "exec": "sleep 0.05; /home/leonardo/.scripts/gammastep.sh",
+    "on-click": "bash /home/leonardo/.scripts/gammastep.sh toggle"
   },
 "custom/expand": {
             "format": "",

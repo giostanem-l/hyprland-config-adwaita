@@ -1,0 +1,8 @@
+-------------------
+---- VARIABLES ----
+-------------------
+mainMod = "SUPER"
+terminal = "kitty"
+fileManager = "nautilus"
+menu = "rofi -show drun" 
+browser = "firefox"

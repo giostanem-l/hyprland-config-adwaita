@@ -17,24 +17,15 @@ hl.config({
             natural_scroll = true,
         },
     },
+})
 
-    -- Configurazione dei Gesti (Touchpad Gestures)
-    -- Mappati dentro la tabella 'gestures' secondo le API standard di Hyprland in Lua
-    gestures = {
-        -- Sintassi comune: "dita direzione, comando" oppure tabelle dedicate
-        -- Nota: Se l'estensione Lua usa definizioni esplicite, la struttura è questa:
-        ["3 horizontal"] = "workspace",
-        ["3 up"]         = "exec, rofi -show drun || killall rofi",
-        ["3 down"]       = "exec, vicinae toggle",
-        ["4 right"]      = "exec, rofi -show drun -config ~/.config/rofi/config2.rasi || killall rofi",
-    },
+hl.gesture({
+    fingers = 3,
+    direction = "horizontal",
+    action = "workspace"
+})
 
-    -- Configurazione Per-Device (Dispositivi Specifici)
-    -- In Hyprland Lua viene gestita passando un array di tabelle sotto 'device'
-    device = {
-        {
+hl.device = ({
             name = "epic-mouse-v1",
             sensitivity = -0.5,
-        },
-    },
 })

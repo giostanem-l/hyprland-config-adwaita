@@ -51,16 +51,18 @@ hl.bind(mainMod .. " + CTRL + up",    hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + CTRL + down",  hl.dsp.window.move({ direction = "down" }))
 
 -- Ridimensionamento Finestre Attive (SUPER + SHIFT + Frecce)
-hl.bind(mainMod .. " + SHIFT + right", hl.dsp.exec_cmd("hyprctl dispatch resizeactive 50 0"))
-hl.bind(mainMod .. " + SHIFT + left",  hl.dsp.exec_cmd("hyprctl dispatch resizeactive -50 0"))
-hl.bind(mainMod .. " + SHIFT + up",    hl.dsp.exec_cmd("hyprctl dispatch resizeactive 0 -50"))
-hl.bind(mainMod .. " + SHIFT + down",  hl.dsp.exec_cmd("hyprctl dispatch resizeactive 0 50"))
+hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.resize({x = 10, y = 0, relative = true}), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.resize({x = -10, y = 0, relative = true}), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + up", hl.dsp.window.resize({x = 0, y = 10, relative = true}), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + down", hl.dsp.window.resize({x = 0, y = -10, relative = true}), { repeating = true })
 
--- Navigazione Workspace (Frecce, Scroll Mouse e Tasti Laterali)
-hl.bind(mainMod .. " + right",     hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(mainMod .. " + left",      hl.dsp.focus({ workspace = "e-1" }))
-hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e-1" }))
-hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e+1" }))
+
+-- Navigazione Workspace (Frecce e Scroll Mouse)
+-- Sistemato secondo l'esempio ufficiale: hl.dsp.focus con la sintassi "e+1" e "e-1"
+hl.bind(mainMod .. " + right",      hl.dsp.focus({ workspace = "r+1" }))
+hl.bind(mainMod .. " + left",       hl.dsp.focus({ workspace = "r-1" }))
+hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "r+1" }))
+hl.bind(mainMod .. " + mouse_down",   hl.dsp.focus({ workspace = "r-1" }))
 
 -- Loop per la gestione dei Workspace 1-10 (Assegnazione e Spostamento Finestre)
 for i = 1, 10 do
@@ -74,8 +76,8 @@ hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Tasti Multimediali del Laptop (Volume, Luminosità, Player)
-hl.bind("XF86AudioRaiseVolume",   hl.dsp.exec_cmd("pamixer -i 5"),                     { locked = true, repeating = true })
-hl.bind("XF86AudioLowerVolume",   hl.dsp.exec_cmd("pamixer -d 5"),                     { locked = true, repeating = true })
+hl.bind("XF86AudioRaiseVolume",   hl.dsp.exec_cmd("pamixer -i 5"),                               { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume",   hl.dsp.exec_cmd("pamixer -d 5"),                               { locked = true, repeating = true })
 hl.bind("XF86AudioMute",          hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),   { locked = true, repeating = true })
 hl.bind("XF86AudioMicMute",       hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true, repeating = true })
 hl.bind("XF86MonBrightnessUp",    hl.dsp.exec_cmd("swayosd-client --brightness +5"),   { locked = true, repeating = true })

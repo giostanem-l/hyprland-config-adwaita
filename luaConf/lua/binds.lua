@@ -61,8 +61,6 @@ hl.bind(mainMod .. " + right",     hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + left",      hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(mainMod .. " + btn_extra", hl.dsp.focus({ workspace = "e-1" }))
-hl.bind(mainMod .. " + btn_side",  hl.dsp.focus({ workspace = "e+1" }))
 
 -- Loop per la gestione dei Workspace 1-10 (Assegnazione e Spostamento Finestre)
 for i = 1, 10 do

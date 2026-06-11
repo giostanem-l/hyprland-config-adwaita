@@ -10,7 +10,7 @@ require("lua.binds")
 require("lua.windowrules")
 require("lua.layerrules")
 require("lua.animations")
-require("lua.lookandfeel")
+require("lua.looknfeel")
 require("lua.autostart")
 
 require("lua.permissions")

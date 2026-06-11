@@ -1,7 +1,7 @@
 --------------------
 ---- ANIMATIONS ----
 --------------------
-hl.animation({ leaf = "global", enabled = true })
+hl.animation({ leaf = "global", enabled = true, speed = 5, bezier = "default" })
 
 hl.curve("overshot", { type = "bezier", points = { {0.13, 0.99}, {0.29, 1.1} } })
 

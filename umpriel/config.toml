@@ -232,6 +232,20 @@ follows_mouse = true
 "Mod+Shift+Up" = "window-move-up"
 "Mod+Shift+Right" = "column-move-right"
 
+# Cambiare monitor
+"Mod+Ctrl+Left" = "output-focus-left"
+"Mod+Ctrl+Right" = "output-focus-right"
+
+# Spostare la finestra focalizzata sull'altro monitor
+"Mod+Ctrl+Shift+Left" = "window-move-to-output-left"
+"Mod+Ctrl+Shift+Right" = "window-move-to-output-right"
+
+# Ridimensionare con le frecce
+"Mod+Alt+Shift+Right" = "window-modify-primary-extent 0.05"
+"Mod+Alt+Shift+Left"  = "window-modify-primary-extent -0.05"
+"Mod+Alt+Shift+Down"  = "window-modify-secondary-extent 0.05"
+"Mod+Alt+Shift+Up"    = "window-modify-secondary-extent -0.05"
+
 # Window state and layout
 "Mod+T" = { action = "window-toggle-floating", repeat = false }
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }

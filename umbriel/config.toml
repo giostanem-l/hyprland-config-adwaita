@@ -24,7 +24,7 @@ files = ["noctalia.toml"]
 # https://docs.noctalia.dev/umbriel/configuration/#general
 #
 [general]
-autostart = ["noctalia", "vicinae", "killall blueman", "killall swaync"]
+autostart = ["noctalia", "vicinae"]
 # xwayland = false
 # Sharp X11 apps and games on scaled outputs; they see physical resolutions.
 # xwayland_native_resolution = true
@@ -46,9 +46,17 @@ autostart = ["noctalia", "vicinae", "killall blueman", "killall swaync"]
 # `umbriel outputs`.
 # https://docs.noctalia.dev/umbriel/configuration/#events
 #
+
+[input.cursor]
+theme = "Adwair"
+size = 18
+
 [events]
 lid_close = "umbriel msg output-disable eDP-1"
 lid_open = "umbriel msg output-enable eDP-1"
+
+
+
 
 
 # ==============================================================================
@@ -195,7 +203,7 @@ follows_mouse = true
 
 # Applications and session
 "Mod+Return" = { action = "spawn kitty", repeat = false }
-"Alt+Tab" = "spawn noctalia msg panel-toggle launcher"
+"Alt+Space" = "spawn noctalia msg panel-toggle launcher"
 "Mod+Q" = { action = "window-close", repeat = false }
 "Mod+Escape" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
@@ -298,6 +306,8 @@ follows_mouse = true
 
 "Mod+B" = {action = "spawn firefox"}
 "Mod+E" = {action = "spawn nautilus --new-window"}
+
+"Mod+Shift+s" = {action = "spawn noctalia msg screenshot-region"}
 
 # ==============================================================================
 # Layout
